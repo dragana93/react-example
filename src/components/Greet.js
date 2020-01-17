@@ -5,13 +5,13 @@ import React from "react";
 // }
 
 const Greet = props => {
+  const { name, surname } = props;
   console.log(props);
   return (
     <div>
       <h1>
-        Hello {props.name} {props.surname}
+        Hello {name} {surname}
       </h1>
-      {props.children}
     </div>
   );
 };
