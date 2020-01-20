@@ -20,6 +20,7 @@ import "./appStyles.css";
 
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <Form />
+      <LifecycleA />
+
+      {/* <Form /> */}
 
       {/* <h1 className="error">Error</h1>
 
