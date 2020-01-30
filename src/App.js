@@ -21,6 +21,10 @@ import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
@@ -29,7 +33,13 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <LifecycleA />
+      <ParentComp />
+
+      {/* <Table /> */}
+
+      {/* <FragmentDemo /> */}
+
+      {/* <LifecycleA /> */}
 
       {/* <Form /> */}
 
