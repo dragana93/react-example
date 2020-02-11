@@ -41,7 +41,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <ClickCounter />
+      <ClickCounter name="Dragana" />
       <HoverCounter />
 
       {/* <ErrorBoundary>
