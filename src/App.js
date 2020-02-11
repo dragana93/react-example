@@ -35,6 +35,8 @@ import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import CounterGa from "./components/CounterGa";
 
 function App() {
   return (
@@ -43,8 +45,39 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
+      {/* <CounterGa
+        render={(count, incrementCount) => (
+          <ClickCounterTwo
+            count={count}
+            incrementCount={incrementCount}
+          ></ClickCounterTwo>
+        )}
+      /> */}
+
+      <CounterGa>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </CounterGa>
+
+      <CounterGa>
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </CounterGa>
+
+      {/* <CounterGa
+        render={(count, incrementCount) => (
+          <HoverCounterTwo
+            count={count}
+            incrementCount={incrementCount}
+          ></HoverCounterTwo>
+        )}
+      /> */}
+      {/* 
       <ClickCounterTwo />
       <HoverCounterTwo />
+      <User render={isLoggedIn => (isLoggedIn ? "GaGa" : "Guest")} /> */}
 
       {/* <ClickCounter name="Dragana" />
       <HoverCounter /> */}
