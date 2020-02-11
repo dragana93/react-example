@@ -33,6 +33,8 @@ import Hero from "./components/Hero";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
 
 function App() {
   return (
@@ -41,8 +43,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <ClickCounter name="Dragana" />
-      <HoverCounter />
+      <ClickCounterTwo />
+      <HoverCounterTwo />
+
+      {/* <ClickCounter name="Dragana" />
+      <HoverCounter /> */}
 
       {/* <ErrorBoundary>
         <Hero heroName="Batman" />
