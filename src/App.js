@@ -37,6 +37,8 @@ import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
 import CounterGa from "./components/CounterGa";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
 
 function App() {
   return (
@@ -45,16 +47,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      {/* <CounterGa
-        render={(count, incrementCount) => (
-          <ClickCounterTwo
-            count={count}
-            incrementCount={incrementCount}
-          ></ClickCounterTwo>
-        )}
-      /> */}
+      <UserProvider value="gaga">
+        <ComponentC />
+      </UserProvider>
 
-      <CounterGa>
+      {/* <CounterGa>
         {(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
@@ -64,7 +61,16 @@ function App() {
         {(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      </CounterGa>
+      </CounterGa> */}
+
+      {/* <CounterGa
+        render={(count, incrementCount) => (
+          <ClickCounterTwo
+            count={count}
+            incrementCount={incrementCount}
+          ></ClickCounterTwo>
+        )}
+      /> */}
 
       {/* <CounterGa
         render={(count, incrementCount) => (
